@@ -190,6 +190,7 @@
         types:
           Asphyxiation: -1.0
     - type: Psionic
+      canReroll: false
       mindbreakingFeedback: shadowkin-blackeye
     - type: InnatePsionicPowers
       powersToAdd:
@@ -202,7 +203,7 @@
         - TauCetiBasic
         - Marish
     - type: PotentiaModifier
-      potentiaMultiplier: 1.5
+      potentiaMultiplier: 1.25
     - type: Tag
       tags:
       - CanPilot
