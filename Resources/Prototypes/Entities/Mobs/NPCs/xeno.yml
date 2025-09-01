@@ -49,8 +49,10 @@
 # SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 Eris
 # SPDX-FileCopyrightText: 2025 Rosycup
+# SPDX-FileCopyrightText: 2025 Sir Warock
 # SPDX-FileCopyrightText: 2025 Spatison
 # SPDX-FileCopyrightText: 2025 VMSolidus
+# SPDX-FileCopyrightText: 2025 Vanessa
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
@@ -91,7 +93,6 @@
   - type: NpcFactionMember
     factions:
     - Xeno
-  - type: Hands
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs
@@ -124,7 +125,8 @@
       150: Dead # DeltaV - Was 50
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.5
+      75: 0.8
+      125: 0.5
   - type: Stamina
     critThreshold: 200
   - type: Bloodstream
@@ -168,7 +170,7 @@
     mindRoles:
       - MindRoleGhostRoleTeamAntagonist
     raffle:
-      settings: default
+      settings: short
   - type: GhostTakeoverAvailable
   - type: TypingIndicator
     proto: alien
@@ -198,12 +200,12 @@
     - Xeno
     understands:
     - Xeno
-  - type: ThermalVision
-    isActive: true
-    lightRadius: 15
-    color: "#808080"
+  - type: NightVision # Goobstation - Nigthvision
+    color: "#6528c9"
     activateSound: null
     deactivateSound: null
+  - type: ThermalVision # Goobstation - Thermal vision
+    color: "#6528c9"
   - type: Fauna # Lavaland Change
 
 - type: entity
@@ -226,7 +228,8 @@
     critThreshold: 300
   - type: SlowOnDamage
     speedModifierThresholds:
-      50: 0.7
+      125: 0.8
+      200: 0.5
   - type: Fixtures
     fixtures:
       fix1:
@@ -261,7 +264,8 @@
       160: Dead # DeltaV - Was 80
   - type: SlowOnDamage
     speedModifierThresholds:
-      40: 0.7
+      80: 0.8
+      120: 0.5
   - type: MeleeWeapon
     damage:
 # Begin DeltaV Changes
@@ -300,7 +304,9 @@
       600: Dead # DeltaV - Was 300
   - type: SlowOnDamage
     speedModifierThresholds:
-      150: 0.7
+      300: 0.9
+      400: 0.8
+      500: 0.7
   - type: MovementSpeedModifier
   - type: MeleeWeapon
     damage:
@@ -359,7 +365,8 @@
 # End DeltaV Changes
   - type: SlowOnDamage
     speedModifierThresholds:
-      50: 0.7
+      100: 0.8
+      150: 0.5
   - type: Fixtures
     fixtures:
       fix1:
@@ -443,7 +450,8 @@
       100: Dead # DeltaV - Was 50
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.7
+      50: 0.8
+      75: 0.5
   - type: HTN
     rootTask:
       task: SimpleRangedHostileCompound
